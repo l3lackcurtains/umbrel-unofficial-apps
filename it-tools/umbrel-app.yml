@@ -1,9 +1,11 @@
 manifestVersion: 1
 id: it-tools
-category: files
 name: IT Tools
-version: "1.0.0"
 tagline: Common tools need on daily basis
+icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.svg
+category: developer
+version: "1.0.0"
+port: 80
 description: >-
   Common tools need on daily basis
 releaseNotes: >-
@@ -11,7 +13,9 @@ developer: it-tools
 website: https://github.com/CorentinTh/it-tools
 dependencies: []
 repo: https://github.com/CorentinTh/it-tools
-port: 80
+support: https://github.com/CorentinTh/it-tools
+gallery:
+  - https://raw.githubusercontent.com/CorentinTh/it-tools/refs/heads/main/public/android-chrome-512x512.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
