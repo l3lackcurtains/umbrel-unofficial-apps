@@ -1,0 +1,19 @@
+manifestVersion: 1
+id: it-tools
+category: files
+name: IT Tools
+version: "1.0.0"
+tagline: Common tools need on daily basis
+description: >-
+  Common tools need on daily basis
+releaseNotes: >-
+developer: it-tools
+website: https://github.com/CorentinTh/it-tools
+dependencies: []
+repo: https://github.com/CorentinTh/it-tools
+port: 80
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: l3lackcurtains
+submission: ""
