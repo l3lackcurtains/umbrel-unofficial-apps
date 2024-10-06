@@ -13,6 +13,7 @@ services:
     environment:
       - OWNCLOUD_ADMIN_USERNAME=owncloud # default admin username
       - OWNCLOUD_ADMIN_PASSWORD=owncloud # default admin password
+      - OWNCLOUD_TRUSTED_DOMAINS=${APP_DOMAIN}:${APP_NEXTCLOUD_PORT} # set to your domain
     healthcheck:
       test: ["CMD", "/usr/bin/healthcheck"]
       interval: 30s

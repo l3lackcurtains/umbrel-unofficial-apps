@@ -2,7 +2,7 @@ manifestVersion: 1
 id: super-owncloud
 name: ownCloud
 tagline: Your own personal cloud storage
-icon: https://owncloud.org/wp-content/uploads/2019/05/ownCloud-logo.png
+icon: https://pbs.twimg.com/profile_images/1769792881995485184/uqIg49vR_400x400.jpg
 category: productivity
 version: "latest"
 port: 6040
@@ -18,8 +18,7 @@ dependencies: []
 repo: https://github.com/owncloud/core
 support: https://owncloud.org/support/
 gallery:
-  - https://owncloud.org/wp-content/uploads/2019/05/ownCloud-screenshot1.png
-  - https://owncloud.org/wp-content/uploads/2019/05/ownCloud-screenshot2.png
+  - https://pbs.twimg.com/profile_images/1769792881995485184/uqIg49vR_400x400.jpg
 path: ""
 defaultUsername: "owncloud"
 defaultPassword: "owncloud"
