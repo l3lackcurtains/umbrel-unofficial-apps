@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: super-nginx-proxy-manager
+name: Nginx Proxy Manager
+tagline: High-performance HTTP server and reverse proxy
+icon: https://nginxproxymanager.com/logo.svg
+category: network
+version: "1.21.3"
+port: 8090
+description: >-
+  Nginx is a high-performance HTTP server, reverse proxy, and IMAP/POP3 proxy server.
+  It is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption.
+releaseNotes: >-
+  - Improved performance and stability
+  - Added new features for reverse proxy management
+  - Fixed various bugs
+developer: Nginx Team
+website: https://nginx.org
+dependencies: []
+repo: https://github.com/nginx/nginx
+support: https://nginx.org/en/support.html
+gallery:
+  -
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: l3lackcurtains
+submission: ""
