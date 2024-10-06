@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: super-it-tools
+name: IT Tools
+tagline: Common tools need on daily basis
+icon: https://raw.githubusercontent.com/CorentinTh/it-tools/refs/heads/main/public/android-chrome-512x512.png
+category: developer
+version: "1.0.0"
+port: 80
+description: >-
+  Common tools need on daily basis
+releaseNotes: >-
+developer: it-tools
+website: https://github.com/CorentinTh/it-tools
+dependencies: []
+repo: https://github.com/CorentinTh/it-tools
+support: https://github.com/CorentinTh/it-tools
+gallery:
+  - https://raw.githubusercontent.com/CorentinTh/it-tools/refs/heads/main/public/android-chrome-512x512.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: l3lackcurtains
+submission: ""

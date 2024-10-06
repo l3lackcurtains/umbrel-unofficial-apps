@@ -1,21 +1,25 @@
-manifestVersion: 1
-id: it-tools
-name: IT Tools
-tagline: Common tools need on daily basis
-icon: https://raw.githubusercontent.com/CorentinTh/it-tools/refs/heads/main/public/android-chrome-512x512.png
-category: developer
-version: "1.0.0"
-port: 80
+id: super-emby
+name: Emby
+tagline: Media server for personal streaming
+icon: https://www.gravatar.com/avatar/29be284481017fd47e5ab20e419cccb4?s=120&r=g&d=404
+category: media
+version: "4.6.7.0"
+port: 8097
 description: >-
-  Common tools need on daily basis
+  Emby Server is a personal media server with apps on just about every device.
+  Emby organizes your media into a rich, beautiful interface and streams it to
+  your devices.
 releaseNotes: >-
-developer: it-tools
-website: https://github.com/CorentinTh/it-tools
+  - Improved performance and stability
+  - Added new features for media management
+  - Fixed various bugs
+developer: Emby Team
+website: https://emby.media
 dependencies: []
-repo: https://github.com/CorentinTh/it-tools
-support: https://github.com/CorentinTh/it-tools
+repo: https://github.com/MediaBrowser/Emby
+support: https://emby.media/community
 gallery:
-  - https://raw.githubusercontent.com/CorentinTh/it-tools/refs/heads/main/public/android-chrome-512x512.png
+  - https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/apps/html5.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
