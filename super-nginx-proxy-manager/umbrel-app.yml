@@ -19,9 +19,12 @@ dependencies: []
 repo: https://github.com/nginx/nginx
 support: https://nginx.org/en/support.html
 gallery:
-  -
+  - https://nginxproxymanager.com/screenshots/login.png
+  - https://nginxproxymanager.com/screenshots/dashboard.png
+  - https://nginxproxymanager.com/screenshots/proxy-hosts.png
+  - https://nginxproxymanager.com/screenshots/proxy-hosts-add.png
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin@example.com"
+defaultPassword: "changeme"
 submitter: l3lackcurtains
 submission: ""
