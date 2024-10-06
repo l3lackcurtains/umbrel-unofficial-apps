@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: nextcloud_web_1
+      APP_HOST: nextcloud
       APP_PORT: 80
       PROXY_AUTH_ADD: "false"
 
@@ -29,23 +29,20 @@ services:
 
   web:
     image: nextcloud:30.0.0-apache@sha256:6613a36792a7e392fc532d5b75e3b018ea5fcea034002083e1c7a182d07eae99
-    # Currently needs to be run as root, if we run as uid 1000 this fails
-    # https://github.com/nextcloud/docker/blob/05026b029d37fc5cd488d4a4a2a79480e39841ba/21.0/apache/entrypoint.sh#L53-L77
-    # user: "1000:1000"
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/nextcloud:/var/www/html
       - ${UMBREL_ROOT}/data/storage:/var/www/html/data
     environment:
-      - MYSQL_HOST=nextcloud_db_1
-      - REDIS_HOST=nextcloud_redis_1
+      - MYSQL_HOST=nextcloud_db
+      - REDIS_HOST=nextcloud_redis
       - MYSQL_PASSWORD=moneyprintergobrrr
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
       - TRUSTED_PROXIES=${NETWORK_IP}/16
       - NEXTCLOUD_ADMIN_USER=umbrel
       - NEXTCLOUD_ADMIN_PASSWORD=${APP_PASSWORD}
-      - NEXTCLOUD_TRUSTED_DOMAINS=${APP_DOMAIN}:${APP_NEXTCLOUD_PORT} ${APP_HIDDEN_SERVICE} ${DEVICE_HOSTNAME}:${APP_NEXTCLOUD_PORT} ${APP_NEXTCLOUD_LOCAL_IPS} nextcloud_web_1
+      - NEXTCLOUD_TRUSTED_DOMAINS=${APP_DOMAIN}:${APP_NEXTCLOUD_PORT} ${APP_HIDDEN_SERVICE} ${DEVICE_HOSTNAME}:${APP_NEXTCLOUD_PORT} ${APP_NEXTCLOUD_LOCAL_IPS} nextcloud
       - PHP_UPLOAD_LIMIT=1024G
     depends_on:
       - db
@@ -53,9 +50,6 @@ services:
 
   cron:
     image: nextcloud:30.0.0-apache@sha256:6613a36792a7e392fc532d5b75e3b018ea5fcea034002083e1c7a182d07eae99
-    # Currently needs to be run as root, if we run as uid 1000 this fails
-    # https://github.com/nextcloud/docker/blob/05026b029d37fc5cd488d4a4a2a79480e39841ba/21.0/apache/entrypoint.sh#L53-L77
-    # user: "1000:1000"
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/nextcloud:/var/www/html

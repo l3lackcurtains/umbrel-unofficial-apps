@@ -37,11 +37,12 @@ releaseNotes: >-
     - Text app enhancements
 
   Full release notes can be found at https://github.com/nextcloud/server/releases
-developer: Nextcloud GmbH
+developer: Nextcloud
 website: https://nextcloud.com
 dependencies: []
 repo: https://github.com/nextcloud/server
 support: https://help.nextcloud.com/categories
+icon: "https://nextcloud.com/c/uploads/2023/02/logo_nextcloud_white.svg"
 port: 8081
 gallery:
   - 1.jpg
