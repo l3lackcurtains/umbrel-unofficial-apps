@@ -10,7 +10,7 @@ services:
       - GIDLIST=100
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - ${UMBREL_ROOT}/data/storage/Multimedia:/mnt/share1
+      - ${UMBREL_ROOT}/data/storage/Multimedia:/Multimedia
     ports:
       - 8097:8096 # HTTP port
       - 8921:8920 # HTTPS port
