@@ -3,10 +3,15 @@ services:
   emby:
     image: emby/embyserver
     container_name: embyserver
+    hostname: ${DEVICE_HOSTNAME}
+    environment:
+      - UID=1000
+      - GID=100
+      - GIDLIST=100
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/data/storage/Multimedia:/mnt/share1
     ports:
-      - 8097:8096
-      - 8921:8920
+      - 8097:8096 # HTTP port
+      - 8921:8920 # HTTPS port
     restart: on-failure
