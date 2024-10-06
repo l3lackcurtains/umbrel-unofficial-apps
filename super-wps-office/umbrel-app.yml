@@ -5,7 +5,7 @@ tagline: Office suite for word processing, spreadsheets, and presentations
 icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wps-office-icon.png
 category: productivity
 version: "latest"
-port: 6000
+port: 6100
 description: >-
   WPS Office is a comprehensive office suite that provides tools for word processing, spreadsheets, and presentations.
   It is fully compatible with Microsoft Office formats and offers a user-friendly interface.
