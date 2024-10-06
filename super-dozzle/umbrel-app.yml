@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: super-dozzle
+name: Dozzle
+tagline: Real-time log viewer for Docker containers
+icon: https://raw.githubusercontent.com/amir20/dozzle/refs/heads/master/docs/public/favicon.ico
+category: developer
+version: "4.0.0"
+port: 9899
+description: >-
+  Dozzle is a simple, lightweight application that provides a real-time log viewer for Docker containers.
+releaseNotes: >-
+  - Added support for Docker Swarm
+  - Improved performance and stability
+  - Fixed various bugs
+developer: amir20
+website: https://github.com/amir20/dozzle
+dependencies: []
+repo: https://github.com/amir20/dozzle
+support: https://github.com/amir20/dozzle/issues
+gallery:
+  -
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: l3lackcurtains
+submission: ""
