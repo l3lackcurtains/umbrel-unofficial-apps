@@ -2,7 +2,7 @@ manifestVersion: 1
 id: it-tools
 name: IT Tools
 tagline: Common tools need on daily basis
-icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.svg
+icon: https://raw.githubusercontent.com/CorentinTh/it-tools/refs/heads/main/public/android-chrome-512x512.png
 category: developer
 version: "1.0.0"
 port: 80
