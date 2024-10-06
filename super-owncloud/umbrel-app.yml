@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: super-owncloud
+name: ownCloud
+tagline: Your own personal cloud storage
+icon: https://owncloud.org/wp-content/uploads/2019/05/ownCloud-logo.png
+category: productivity
+version: "latest"
+port: 6040
+description: >-
+  ownCloud is a self-hosted file sync and share server. It provides access to your data through a web interface, sync clients, or WebDAV while providing a platform to view, sync, and share across devices easily.
+releaseNotes: >-
+  - Initial release
+  - Self-hosted file sync and share server
+  - Access data through web interface, sync clients, or WebDAV
+developer: ownCloud GmbH
+website: https://owncloud.org
+dependencies: []
+repo: https://github.com/owncloud/core
+support: https://owncloud.org/support/
+gallery:
+  - https://owncloud.org/wp-content/uploads/2019/05/ownCloud-screenshot1.png
+  - https://owncloud.org/wp-content/uploads/2019/05/ownCloud-screenshot2.png
+path: ""
+defaultUsername: "owncloud"
+defaultPassword: "owncloud"
+submitter: l3lackcurtains
+submission: ""

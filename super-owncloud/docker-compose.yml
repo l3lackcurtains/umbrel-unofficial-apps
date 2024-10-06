@@ -1,0 +1,54 @@
+version: "3.8"
+
+services:
+  owncloud:
+    image: owncloud/server:latest
+    container_name: owncloud_server
+    restart: always
+    ports:
+      - 6040:8080
+    depends_on:
+      - mariadb
+      - redis
+    environment:
+      - OWNCLOUD_ADMIN_USERNAME=owncloud # default admin username
+      - OWNCLOUD_ADMIN_PASSWORD=owncloud # default admin password
+    healthcheck:
+      test: ["CMD", "/usr/bin/healthcheck"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - ${UMBREL_ROOT}/data/storage:/mnt/data
+
+  mariadb:
+    image: mariadb:10.11 # minimum required ownCloud version is 10.9
+    container_name: owncloud_mariadb
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=owncloud
+      - MYSQL_USER=owncloud
+      - MYSQL_PASSWORD=owncloud
+      - MYSQL_DATABASE=owncloud
+      - MARIADB_AUTO_UPGRADE=1
+    command: ["--max-allowed-packet=128M", "--innodb-log-file-size=64M"]
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-u", "root", "--password=owncloud"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ${APP_DATA_DIR}/mysql:/var/lib/mysql
+
+  redis:
+    image: redis:6
+    container_name: owncloud_redis
+    restart: always
+    command: ["--databases", "1"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ${APP_DATA_DIR}/redis:/data

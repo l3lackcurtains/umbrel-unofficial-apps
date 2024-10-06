@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: super-pydio
+name: Pydio
+tagline: Secure file sharing and collaboration platform
+icon: https://avatars.githubusercontent.com/u/6155357?s=200&v=4
+category: productivity
+version: "latest"
+port: 6060
+description: >-
+  Pydio is a secure file sharing and collaboration platform that allows you to manage and share files with your team or clients.
+  It provides a user-friendly interface and robust security features to ensure your data is safe.
+releaseNotes: >-
+  - Initial release
+  - Secure file sharing and collaboration
+  - User-friendly interface and robust security features
+developer: Pydio
+website: https://pydio.com
+dependencies: []
+repo: https://github.com/pydio/cells
+support: https://pydio.com/en/community/support
+gallery:
+  - https://avatars.githubusercontent.com/u/6155357?s=200&v=4
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: l3lackcurtains
+submission: ""

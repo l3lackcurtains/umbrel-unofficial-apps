@@ -1,0 +1,17 @@
+services:
+  wps-office:
+    image: lscr.io/linuxserver/wps-office:latest
+    container_name: wps-office
+    security_opt:
+      - seccomp:unconfined #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ${APP_DATA_DIR}/config:/config
+    ports:
+      - 6000:3000
+      - 6001:3001
+    shm_size: "1gb"
+    restart: unless-stopped

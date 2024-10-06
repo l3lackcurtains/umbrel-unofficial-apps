@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  cells:
+    image: pydio/cells:latest
+    restart: unless-stopped
+    ports:
+      - 6060:8080
+    environment:
+      - CELLS_LOG_LEVEL=production
+    volumes:
+      - ${UMBREL_ROOT}/data/storage:/var/cells/data
+      - ${APP_DATA_DIR}/cellsdir:/var/cells
+
+  mysql:
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
+      MYSQL_DATABASE: cells
+      MYSQL_USER: pydio
+      MYSQL_PASSWORD: P@ssw0rd
+    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci]
+    volumes:
+      - ${APP_DATA_DIR}/:/var/lib/mysql

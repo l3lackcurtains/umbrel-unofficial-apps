@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: super-chromium
+name: Chromium
+tagline: Open-source web browser
+icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png
+category: utilities
+version: "latest"
+port: 7000
+description: >-
+  Chromium is an open-source web browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
+releaseNotes: >-
+  - Initial release
+  - Open-source web browser
+  - Based on the latest Chromium project
+developer: LinuxServer.io
+website: https://www.linuxserver.io/
+dependencies: []
+repo: https://github.com/linuxserver/docker-chromium
+support: https://github.com/linuxserver/docker-chromium/issues
+gallery:
+  -
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: l3lackcurtains
+submission: ""
