@@ -3,16 +3,10 @@ services:
   emby:
     image: emby/embyserver
     container_name: embyserver
-    runtime: nvidia # Expose NVIDIA GPUs
-    network_mode: host # Enable DLNA and Wake-on-Lan
-    environment:
-      - UID=1000 # The UID to run emby as (default: 2)
-      - GID=100 # The GID to run emby as (default 2)
-      - GIDLIST=100 # A comma-separated list of additional GIDs to run emby as (default: 2)
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/data/storage/Multimedia:/mnt/share1
     ports:
-      - 8097:8096 # HTTP port
-      - 8921:8920 # HTTPS port
+      - 8097:8096
+      - 8921:8920
     restart: on-failure
