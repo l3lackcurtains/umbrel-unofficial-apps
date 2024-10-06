@@ -4,7 +4,7 @@ name: Dozzle
 tagline: Real-time log viewer for Docker containers
 icon: https://raw.githubusercontent.com/amir20/dozzle/refs/heads/master/docs/public/favicon.ico
 category: developer
-version: "4.0.0"
+version: "8.5.5"
 port: 9897
 description: >-
   Dozzle is a simple, lightweight application that provides a real-time log viewer for Docker containers.

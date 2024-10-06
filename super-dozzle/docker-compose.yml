@@ -1,8 +1,6 @@
 version: "3.7"
 services:
   dozzle:
-    container_name: dozzle
-    hostname: ${DEVICE_HOSTNAME}
     image: amir20/dozzle:latest
     volumes:
       - ${APP_DATA_DIR}/var/run/docker.sock:/var/run/docker.sock
