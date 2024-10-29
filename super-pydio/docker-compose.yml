@@ -8,7 +8,7 @@ services:
     environment:
       - CELLS_LOG_LEVEL=production
     volumes:
-      - ${UMBREL_ROOT}/data/storage:/var/cells/data
+      - ${UMBREL_ROOT}/data/storage/pydio:/var/cells/data
       - ${APP_DATA_DIR}/cellsdir:/var/cells
 
   mysql:

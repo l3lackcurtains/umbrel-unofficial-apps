@@ -13,14 +13,14 @@ services:
     environment:
       - OWNCLOUD_ADMIN_USERNAME=owncloud # default admin username
       - OWNCLOUD_ADMIN_PASSWORD=owncloud # default admin password
-      - OWNCLOUD_TRUSTED_DOMAINS=${APP_DOMAIN}:${APP_NEXTCLOUD_PORT} # set to your domain
+      - OWNCLOUD_TRUSTED_DOMAINS=${APP_DOMAIN}:${APP_OWNCLOUD_PORT} ${APP_HIDDEN_SERVICE} ${DEVICE_HOSTNAME}:${APP_OWNCLOUD_PORT} ${APP_OWNCLOUD_LOCAL_IPS} owncloud_web_1
     healthcheck:
       test: ["CMD", "/usr/bin/healthcheck"]
       interval: 30s
       timeout: 10s
       retries: 5
     volumes:
-      - ${UMBREL_ROOT}/data/storage:/mnt/data
+      - ${UMBREL_ROOT}/data/storage/owncloud:/mnt/data
 
   mariadb:
     image: mariadb:10.11 # minimum required ownCloud version is 10.9
