@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: teleaia
+name: Teleaia
+tagline: Telegram downloader bot
+icon: https://pngimg.com/uploads/telegram/telegram_PNG15.png
+category: utilities
+version: "latest"
+port: 8080
+description: >-
+  Teleaia is a Telegram bot that allows you to download files directly from Telegram. It provides a simple interface to manage and download files shared in Telegram chats.
+releaseNotes: >-
+  - Initial release
+  - Download files directly from Telegram
+  - Simple interface to manage and download files
+developer: Teleaia Team
+website: https://github.com/besoeasy/telearia
+dependencies: []
+repo: https://github.com/besoeasy/telearia
+support: https://github.com/besoeasy/telearia/issues
+gallery:
+  - https://pngimg.com/uploads/telegram/telegram_PNG15.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: besoeasy
+submission: ""

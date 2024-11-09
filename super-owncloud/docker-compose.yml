@@ -13,7 +13,7 @@ services:
     environment:
       - OWNCLOUD_ADMIN_USERNAME=owncloud # default admin username
       - OWNCLOUD_ADMIN_PASSWORD=owncloud # default admin password
-      - OWNCLOUD_TRUSTED_DOMAINS=${APP_DOMAIN}:${APP_OWNCLOUD_PORT} ${APP_HIDDEN_SERVICE} ${DEVICE_HOSTNAME}:${APP_OWNCLOUD_PORT} ${APP_OWNCLOUD_LOCAL_IPS} owncloud_web_1
+      - OWNCLOUD_TRUSTED_DOMAINS=${APP_DOMAIN}:${APP_OWNCLOUD_PORT} ${APP_HIDDEN_SERVICE} ${DEVICE_HOSTNAME}:${APP_OWNCLOUD_PORT} ${APP_OWNCLOUD_LOCAL_IPS} owncloud_server
     healthcheck:
       test: ["CMD", "/usr/bin/healthcheck"]
       interval: 30s
